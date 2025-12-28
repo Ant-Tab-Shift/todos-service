@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: sub_service
+    env_file: .env
+    ports:
+      - "${PORT}:8080"
+    restart: always
